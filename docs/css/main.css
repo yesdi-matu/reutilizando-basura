@@ -20,6 +20,11 @@ body,
   color: white;
   margin-bottom: 0;
 }
+.app-main__made {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.8;
+}
 .app-main__option {
   margin-right: 15px;
 }
