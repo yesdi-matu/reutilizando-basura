@@ -1,12 +1,8 @@
 .app-main {
     &__header {
-        //display: flex;
-        //align-items: center;
-        //justify-content: center;
         background-color: #7952b3;
         color: white;
-        //height: 100px;
-        //padding: 15px;
+        margin-bottom: 0;
     }
 
     &__body {
@@ -19,21 +15,80 @@
     }
 
     &__section {
-        padding: 50px;
+        padding: 15px 0;
 
+        // Elementos impar
         &:nth-child(even) {
-            //background-color: lighten(blue, 35);
             background-color: lighten(#e91e63, 10);
             color: white;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         }
 
+        // Elementos par
         &:nth-child(odd) {
             background-color: lighten(blue, 45);
         }
 
+        &--conclusion {
+            min-height: 300px;
+        }
+
         &-title {
-            padding: 15px;
-            padding-top: 30px;
+            &--image {
+                margin-bottom: 30px;
+            }
+        }
+
+        &-content {
+            // max-width: 540px;
+            //     padding-left: 15px;
+            //     padding-right: 15px;
+            //     margin-left: auto;
+            //     margin-right: auto;
+            // @media (min-width: 576px) {
+            //     max-width: 540px;
+            //     padding-left: 15px;
+            //     padding-right: 15px;
+            //     margin-left: auto;
+            //     margin-right: auto;
+            // }
+
+            // @media (min-width: 768px) {
+            //     max-width: 720px;
+            //     padding-right: 15px;
+            //     padding-left: 15px;
+            //     margin-right: auto;
+            //     margin-left: auto;
+            // }
+        }
+    }
+
+    &__list {
+        li {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__comment {
+        display: flex;
+        justify-content: flex-end;
+        font-weight: bold;
+    }
+
+    &__go-top {
+        display: block;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background-color: #7952b3;
+        border-radius: 50px;
+        box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.5);
+
+        svg {
+            width: 60px;
+            height: 60px;
         }
     }
 }

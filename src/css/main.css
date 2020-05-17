@@ -4,10 +4,6 @@ body,
   box-sizing: border-box;
 }
 
-body {
-  font-size: 24px;
-}
-
 .app-image {
   width: 350px;
   height: 300px;
@@ -22,21 +18,48 @@ body {
 .app-main__header {
   background-color: #7952b3;
   color: white;
+  margin-bottom: 0;
 }
 .app-main__option {
   margin-right: 15px;
 }
 .app-main__section {
-  padding: 50px;
+  padding: 15px 0;
 }
 .app-main__section:nth-child(even) {
   background-color: #ee4c83;
   color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .app-main__section:nth-child(odd) {
   background-color: #e6e6ff;
 }
-.app-main__section-title {
-  padding: 15px;
-  padding-top: 30px;
+.app-main__section--conclusion {
+  min-height: 300px;
+}
+.app-main__section-title--image {
+  margin-bottom: 30px;
+}
+.app-main__list li {
+  margin-bottom: 15px;
+}
+.app-main__comment {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+.app-main__go-top {
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #7952b3;
+  border-radius: 50px;
+  box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.5);
+}
+.app-main__go-top svg {
+  width: 60px;
+  height: 60px;
 }

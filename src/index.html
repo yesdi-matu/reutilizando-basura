@@ -13,133 +13,232 @@
 </head>
 
 <body class="app-main">
-    <div class="jumbotron app-main__header">
-        <h1 class="display-4">REUTILIZANDO LA BASURA DISMINUYE</h1>
-        <p class="lead">
-            Bienvenido a esta página, aquí encontraras información sobre el tema de reutilización de basura.
-            Como todos sabemos el aumento de basura cada vez es mucho mayor, por ello me interese en este tema para
-            compartirles la idea de reutilizar la basura.
-        </p>
-    </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Menú -->
+    <nav id="menu" class="navbar navbar-expand-lg navbar-dark" style="background-color: #7952b3;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMenu"
+            aria-controls="navbarTogglerMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- <a class="navbar-brand" href="#">Reutilizando la Basura</a> -->
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <div class="collapse navbar-collapse" id="navbarTogglerMenu">
+            <a class="navbar-brand" href="#">Menú</a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item app-main__option">
+                    <a class="btn btn-success my-2 my-sm-0" href="#objetivo">Objetivo general</a>
+                </li>
                 <li class="nav-item active app-main__option">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Papel reciclado</button>
+                    <a class="btn btn-success my-2 my-sm-0" href="#papel">Papel reciclado</a>
                 </li>
                 <li class="nav-item app-main__option">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Plástico reciclado</button>
+                    <a class="btn btn-success my-2 my-sm-0" href="#plastico">Plástico reciclado</a>
                 </li>
                 <li class="nav-item app-main__option">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Vidrio reciclado</button>
+                    <a class="btn btn-success my-2 my-sm-0" href="#vidrio">Vidrio reciclado</a>
                 </li>
                 <li class="nav-item app-main__option">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Objetivo general</button>
+                    <a class="btn btn-success my-2 my-sm-0" href="#meta">Meta</a>
                 </li>
                 <li class="nav-item app-main__option">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Meta</button>
+                    <a class="btn btn-success my-2 my-sm-0" href="#beneficios">Beneficios</a>
                 </li>
                 <li class="nav-item app-main__option">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Beneficios</button>
+                    <a class="btn btn-success my-2 my-sm-0" href="#conclusion">Conclusión</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="app-main__body">
-
-        <div class="app-main__section">
-            <h2>
-                Objetivo general:
-            </h2>
-            <p>
-                Disminuir la basura por medio de talleres reciclando papel, plástico y vidrio, creando objetos
-                artesanales y
-                llevando a casa un nuevo ingreso.
+    <!-- Presentación -->
+    <div class="jumbotron jumbotron-fluid app-main__header">
+        <div class="container">
+            <h1 class="display-4">REUTILIZANDO LA BASURA DISMINUYE</h1>
+            <p class="lead">
+                Bienvenido a esta página, aquí encontrarás información sobre el tema de reutilización de basura.
+                Como todos sabemos el aumento de basura cada vez es mucho mayor, por ello me interesé en este tema para
+                compartirles la idea de reutilizar la basura.
             </p>
         </div>
+    </div>
 
-        <div class="app-main__section">
-            <div class="app-main__section-title">
-                <h2>Manualidades y artesanías con papel reciclado</h2>
+    <div class="app-main__body">
+
+        <div id="objetivoGeneral" class="app-main__section">
+            <div class="container">
+                <h2 class="app-main__section-title">
+                    Objetivo general
+                </h2>
+                <p>
+                    Disminuir la basura por medio de talleres reciclando papel, plástico y vidrio, creando objetos
+                    artesanales y
+                    llevando a casa un nuevo ingreso.
+                </p>
             </div>
-            <div class="row app-container">
-                <div class="col-md-12 col-lg-4 app-image__container">
-                    <img class="app-image" src="./img/papel-reciclado-1.jpg" alt="">
+        </div>
+
+        <!-- Manualidades con papel reciclado -->
+        <div id="papel" class="app-main__section">
+            <div class="container">
+                <h2 class="app-main__section-title app-main__section-title--image">
+                    Manualidades y artesanías con papel reciclado
+                </h2>
+                <div class="row app-container">
+                    <div class="col-md-12 col-lg-4 app-image__container">
+                        <img class="app-image" src="./img/papel-reciclado-1.jpg" alt="">
+                    </div>
+                    <div class="col-md-12 col-lg-4 app-image__container">
+                        <img class="app-image" src="./img/papel-reciclado-2.jpg" alt="">
+                    </div>
+                    <div class="col-md-12 col-lg-4 app-image__container">
+                        <img class="app-image" src="./img/papel-reciclado-3.jpg" alt="">
+                    </div>
                 </div>
-                <div class="col-md-12 col-lg-4 app-image__container">
-                    <img class="app-image" src="./img/papel-reciclado-2.jpg" alt="">
-                </div>
-                <div class="col-md-12 col-lg-4 app-image__container">
-                    <img class="app-image" src="./img/papel-reciclado-3.jpg" alt="">
-                </div>
-            </div>
-            <div class="row app-container">
-                <div class="col-md-12 col-lg-4 app-image__container">
-                    <img class="app-image" src="./img/papel-reciclado-4.jpg" alt="">
-                </div>
-                <div class="col-md-12 col-lg-4 app-image__container">
-                    <img class="app-image" src="./img/papel-reciclado-5.jpg" alt="">
-                </div>
-                <div class="col-md-12 col-lg-4 app-image__container">
-                    <img class="app-image" src="./img/papel-reciclado-6.jpg" alt="">
+                <div class="row app-container">
+                    <div class="col-md-12 col-lg-4 app-image__container">
+                        <img class="app-image" src="./img/papel-reciclado-4.jpg" alt="">
+                    </div>
+                    <div class="col-md-12 col-lg-4 app-image__container">
+                        <img class="app-image" src="./img/papel-reciclado-5.jpg" alt="">
+                    </div>
+                    <div class="col-md-12 col-lg-4 app-image__container">
+                        <img class="app-image" src="./img/papel-reciclado-6.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="app-main__section">
-            <div class="app-main__section-title">
-                <h2>Manualidades con plástico reciclado</h2>
-            </div>
-
-            <div class="row app-container">
-                <div class="col-md-12 col-lg-4 app-image__container">
-                    <img class="app-image" src="./img/plastico-reciclado-1.jpg" alt="">
+        <!-- Manualidades con plástico reciclado -->
+        <div id="plastico" class="app-main__section">
+            <div class="container">
+                <h2 class="app-main__section-title app-main__section-title--image">
+                    Manualidades con plástico reciclado
+                </h2>
+                <div class="row app-container">
+                    <div class="col-md-12 col-lg-4 app-image__container">
+                        <img class="app-image" src="./img/plastico-reciclado-1.jpg" alt="">
+                    </div>
+                    <div class="col-md-12 col-lg-4 app-image__container">
+                        <img class="app-image" src="./img/plastico-reciclado-2.jpg" alt="">
+                    </div>
+                    <div class="col-md-12 col-lg-4 app-image__container">
+                        <img class="app-image" src="./img/plastico-reciclado-3.jpg" alt="">
+                    </div>
                 </div>
-                <div class="col-md-12 col-lg-4 app-image__container">
-                    <img class="app-image" src="./img/plastico-reciclado-2.jpg" alt="">
-                </div>
-                <div class="col-md-12 col-lg-4 app-image__container">
-                    <img class="app-image" src="./img/plastico-reciclado-3.jpg" alt="">
-                </div>
-            </div>
-            <div class="row app-container">
-                <div class="col-md-12 col-lg-4 app-image__container">
-                    <img class="app-image" src="./img/plastico-reciclado-4.jpg" alt="">
-                </div>
-                <div class="col-md-12 col-lg-4 app-image__container">
-                    <img class="app-image" src="./img/plastico-reciclado-5.jpg" alt="">
-                </div>
-                <div class="col-md-12 col-lg-4 app-image__container">
-                    <img class="app-image" src="./img/plastico-reciclado-6.jpg" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div class="app-main__section">
-            <div class="app-main__section-title">
-                <h2>Manualidades de vidrio reciclado</h2>
-            </div>
-            <div class="row app-container">
-                <div class="col-md-12 col-lg-4 app-image__container">
-                    <img class="app-image" src="./img/vidrio-reciclado-1.jpg" alt="">
-                </div>
-                <div class="col-md-12 col-lg-4 app-image__container">
-                    <img class="app-image" src="./img/vidrio-reciclado-2.jpg" alt="">
-                </div>
-                <div class="col-md-12 col-lg-4 app-image__container">
-                    <img class="app-image" src="./img/vidrio-reciclado-3.jpg" alt="">
+                <div class="row app-container">
+                    <div class="col-md-12 col-lg-4 app-image__container">
+                        <img class="app-image" src="./img/plastico-reciclado-4.jpg" alt="">
+                    </div>
+                    <div class="col-md-12 col-lg-4 app-image__container">
+                        <img class="app-image" src="./img/plastico-reciclado-5.jpg" alt="">
+                    </div>
+                    <div class="col-md-12 col-lg-4 app-image__container">
+                        <img class="app-image" src="./img/plastico-reciclado-6.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!-- Manualidades con vidrio reciclado -->
+        <div id="vidrio" class="app-main__section">
+            <div class="container">
+                <h2 class="app-main__section-title app-main__section-title--image">
+                    Manualidades de vidrio reciclado
+                </h2>
+                <div class="row app-container">
+                    <div class="col-md-12 col-lg-4 app-image__container">
+                        <img class="app-image" src="./img/vidrio-reciclado-1.jpg" alt="">
+                    </div>
+                    <div class="col-md-12 col-lg-4 app-image__container">
+                        <img class="app-image" src="./img/vidrio-reciclado-2.jpg" alt="">
+                    </div>
+                    <div class="col-md-12 col-lg-4 app-image__container">
+                        <img class="app-image" src="./img/vidrio-reciclado-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Meta -->
+        <div id="meta" class="app-main__section">
+            <div class="container">
+                <h2 class="app-main__section-title">
+                    Meta
+                </h2>
+                <ul class="app-main__list">
+                    <li>Crear un plan de trabajo para realizar los talleres de reutilización.</li>
+                    <li>Crear una presentación digital para proponerlo al presidente municipal para lograr obtener su
+                        apoyo.
+                    </li>
+                    <li>Buscar maneras llamativas para la publicación del taller.</li>
+                    <li>Realizar demostraciones de objetos artesanales para que la gente se dé cuenta que no necesitaría
+                        invertir mucho tiempo creando artesanías y se motive para asistir</li>
+                    <li>Crear conciencia en toda la comunidad, para que las personas que por alguna razón no puedan
+                        asistir
+                        al
+                        taller, al menos puedan aportar su granito de arena seleccionando la basura empezando por su
+                        casa.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="beneficios" class="app-main__section">
+            <div class="container">
+                <h2 class="app-main__section-title">
+                    Beneficios
+                </h2>
+                <ul class="app-main__list">
+                    <li><strong>Menos tala de árboles:</strong> Reutilizando el papel preservaríamos los recursos
+                        naturales.
+                    </li>
+                    <li><strong>Ahorro de agua:</strong> Reutilizando ahorraríamos la cantidad de agua que conlleva al
+                        momento de reciclar.</li>
+                    <li><strong>Ahorro de energía:</strong> Con el ahorro de energía se disminuiría los gases de efecto
+                        invernadero.</li>
+                    <li><strong>Ahorro de dinero:</strong> Con la reutilización podríamos crear sin fin de objetos que
+                        nos
+                        podrían servir ya sea para decorar nuestra casa o para crear objetos como botes de basura sin la
+                        necesidad de tener que comprarlos o bien podrían ser artesanales como papel mache para poner en
+                        venta y tener un ingreso extra.</li>
+                    <li><strong>Ahorro de petróleo:</strong> El petróleo es la materia principal mediante la cual se
+                        fabrica
+                        el plástico, por lo que uno de los principales beneficios de la reutilización es el ahorro de un
+                        recurso no renovable que cada día escasea más. Mediante la reutilización podemos ahorrarnos
+                        miles de
+                        toneladas de petróleo al año.</li>
+                    <li>
+                        <string>Disminuir la contaminación:</string> Cada año decenas de toneladas de plásticos acaban
+                        en
+                        los océanos, destruyendo el hábitat marino y la salud de nuestro planeta. Algo tan simple como
+                        reutilizar o reciclar puede evitar que esto suceda y que todos esos residuos plásticos que
+                        creamos
+                        puedan tener una segunda vida y no terminen flotando en nuestras costas. Sin duda, este es otro
+                        de
+                        los grandes beneficios de reutilizar y reciclar.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="conclusion" class="app-main__section app-main__section--conclusion">
+            <div class="container">
+                <h2 class="app-main__section-title">
+                    Conclusión
+                </h2>
+                <p>
+                    Ahora que ya estas informado de cuáles son los beneficios de reutilizar, es momento de ponerlo en
+                    práctica.
+                </p>
+                <div class="app-main__comment">
+                    <span>"Recuerda un granito de arena, hace la diferencia"</span>
+                </div>
+            </div>
+        </div>
+
+        <a class="app-main__go-top" href="#menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px">
+                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+                <path d="M0 0h24v24H0z" fill="none" /></svg>
+        </a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
