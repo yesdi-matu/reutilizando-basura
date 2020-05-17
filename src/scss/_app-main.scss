@@ -1,0 +1,39 @@
+.app-main {
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #7952b3;
+        color: white;
+        height: 100px;
+        padding: 15px;
+    }
+
+    &__body {
+        //margin: 15px 50px;
+        // margin: 0 auto;
+    }
+
+    &__option {
+        margin-right: 15px;
+    }
+
+    &__section {
+        padding: 50px;
+
+        &:nth-child(even) {
+            //background-color: lighten(blue, 35);
+            background-color: lighten(#e91e63, 10);
+            color: white;
+        }
+
+        &:nth-child(odd) {
+            background-color: lighten(blue, 45);
+        }
+
+        &-title {
+            padding: 15px;
+            padding-top: 30px;
+        }
+    }
+}
